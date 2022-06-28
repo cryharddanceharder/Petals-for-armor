@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>petals for armor</title>
+    <style>
+      html {
+        background: white;
+      }
+      body {
+        background: linear-gradient(
+          103deg,
+          rgb(235, 225, 188) 7.2%,
+          rgb(232, 188, 234) 57.5%,
+          rgb(203, 209, 244) 90.7%
+        );
+        color: white;
+        border: 5px solid;
+        border-radius: 15px;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: monospace;
+        font-size: 60px;
+        margin: 0px;
+      }
+      h2 {
+        text-align: center;
+        color: rgb(148, 105, 161);
+        margin: 15px, 0px;
+        font-weight: 550;
+        font-family: monospace;
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        border: 2px solid;
+        border-radius: 5px;
+        color: white;
+      }
+      p {
+        text-align: center;
+        color: rgb(5, 90, 116);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        padding: 10px;
+      }
+      a {
+        color: rgb(148, 105, 161);
+        font-weight: 600;
+      }
+      div {
+        color: rgb(5, 90, 116);
+        text-align: center;
+        font-family: monospace;
+        font-size: 14px;
+        line-height: 15px;
+      }
+      .username {
+        color: rgb(168, 4, 105);
+        font-weight: 525;
+      }
+      button {
+        text-align: center;
+        font-weight: 500;
+        display: block;
+        margin: 25px auto;
+        background-color: rgb(165, 117, 187);
+        color: rgb(255, 226, 242);
+        font-family: monospace;
+        font-size: 20px;
+        padding: 12px;
+        border: 2px solid;
+        border-radius: 25px 5px;
+        box-shadow: 3px 3px 6px grey;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: rgb(255, 226, 242);
+        color: rgb(165, 117, 187);
+        transition: all 150ms ease-in-out;
+      }
+      h6 {
+        text-align: center;
+        color: rgb(82, 9, 110);
+        font-family: monospace;
+        font-size: 11px;
+        margin: 0px;
+      }
+      h4 {
+        text-align: center;
+        color: rgb(82, 9, 110);
+        font-family: monospace;
+        font-weight: 900;
+        font-size: 15px;
+        margin: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><strong>Petals for Armor</strong></h1>
+    <h2><em>forgot my roots, now watch me bloom...🌺</em></h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/017/369/original/petals.png?1632074274"
+      att="petals"
+      width="450"
+    />
+    <p>
+      <em>Petals for Armor</em> is the critically acclaimed solo album from
+      singer-songwriter and Paramore frontwoman Hayley Williams. An ethereal and
+      emotionally vulnerable solo debut, <em>Petals</em> has a metacritic score
+      of 83 and is lauded as one of the 'greatest albums in recorded history'
+      according to highly important music critic, Rebecca Foster. With her
+      powerful vocals and exquisitive lyricism, Hayley Williams remains one of
+      Rock's most iconic women and the definition of 'absolute queen'.<br /><br />
+      <a
+        href="https://hayleywilliams.lnk.to/PFAAW"
+        target="-blank"
+        style="text-decoration: none"
+      >
+        ● Choose a streaming service ●
+      </a>
+    </p>
+    <button><em>Wrap yourself in petals for armor 🌺</em></button>
+    <hr />
+    <div>
+      <span
+        >twitter / insta / tumblr / pinterest:
+        <span class="username"> @yelyahwilliams </span>
+      </span>
+    </div>
+    <hr />
+    <h4>🌸Coded by Becky Foster🌸</h4>
+    <h6>Disclaimer: I am not on Hayley Willians' payroll.</h6>
+    <script>
+      function petalsForArmor() {
+        let name = prompt("What is your name?");
+        let listen = prompt(
+          "Have you listened to Petals for Armor yet?"
+        ).toLowerCase();
+
+        if (listen === "yes") {
+          alert(
+            `Congratulations ${name}! You have already been enlightened 🌺`
+          );
+        } else {
+          alert(
+            `Don't worry ${name}! Choose a streaming service below to be enlightened 🌺`
+          );
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", petalsForArmor);
+    </script>
+  </body>
+</html>
